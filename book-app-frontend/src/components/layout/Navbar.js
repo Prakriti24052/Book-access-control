@@ -29,10 +29,10 @@ const Navbar = () => {
               {user?.role === 'admin' && (
                 <>
                   <Link to="/add-book" className="flex items-center hover:text-blue-200">
-                    <FaPlus className="mr-1" /> Add Book
+                     Add Book
                   </Link>
                   <Link to="/admin/users" className="flex items-center hover:text-blue-200">
-                    <FaUserCog className="mr-1" /> Users
+                     Users
                   </Link>
                 </>
               )}
@@ -41,16 +41,16 @@ const Navbar = () => {
                 onClick={handleLogout} 
                 className="flex items-center hover:text-blue-200"
               >
-                <FaSignOutAlt className="mr-1" /> Logout
+                Logout
               </button>
             </>
           ) : (
             <>
               <Link to="/login" className="flex items-center hover:text-blue-200">
-                <FaSignInAlt className="mr-1" /> Login
+                Login
               </Link>
               <Link to="/register" className="flex items-center hover:text-blue-200">
-                <FaUserPlus className="mr-1" /> Register
+                Register
               </Link>
             </>
           )}

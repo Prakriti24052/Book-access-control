@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getUsers, updateUserRole } from '../../services/userService';
 import { toast } from 'react-toastify';
+import { useAuth } from "../../context/authContext" // ✅ Three levels up
 
 const UserManagement = () => {
   const [users, setUsers] = useState([]);
